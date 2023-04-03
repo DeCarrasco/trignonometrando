@@ -1,0 +1,162 @@
+﻿/*Garante não haver bordas com focus, seleção, pós click e etc.... em nada*/
+* {
+    outline: none;
+    overflow: hidden;
+}
+html, body{
+	width: 100%;
+	min-height: 100%;
+	height: 100%;
+	border-width: 0;
+	margin: auto;
+	font-family: Arial;
+	background-image: url('../imagens/fundoPrincipal.jpg');
+	background-repeat: repeat;
+}
+p{
+	text-align: center;
+	font-size: 1.5em;
+	font-family: "Arial";
+	font-weight: bold;
+}
+.preloader {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    background: #d7e2e6 url('../imagens/fundoPrincipal.jpg') repeat fixed;
+    z-index: 10;
+
+    display: -webkit-flex;
+	  display: flex;
+	  -webkit-align-items: center;
+	  align-items: center;
+	  -webkit-justify-content: center;
+	  justify-content: center;
+
+    text-align: center;
+    color: #2a0ff3;
+    font-size: 40px;
+    font-family: "Arial";
+    font-style: italic;
+    font-weight: bold;
+}
+.aviso{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #fff;
+}
+.container{
+  /*O container principal deve ser centralizado na vertical
+  e como não foi especificado altura e largura, irá se adaptar ao conteúdo*/
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.header{
+	width: 100%;
+	height: 45px;
+	border-width: 0;
+	margin: 0px 0px 0px 0px;
+	padding-bottom: 0;
+	text-align: center;
+}
+.footer{
+	width: 1000px;
+	height: 35px;
+	border-width: 0px;
+	margin: auto;
+	margin-top:  -10px;
+	clear: both;
+	text-align: right;
+}
+.mainArea{
+	display:block;
+	padding-top: 0px;
+  width:1000px;
+  height:500px;
+	margin: auto;
+	margin-top: -10px;
+	background-color: #fff;
+	border: 10px solid #4b819a;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+ 	border-radius:20px;
+}
+.objectCanvas{
+	background-color: transparent;
+	margin: auto;
+}
+button{
+	display: inline;
+	background-color: #4b819a;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-width: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 150px;
+	height: 45px;
+	font-size: 20px;
+	font-family: Arial;
+	font-style: italic;
+	font-weight: bold;
+	padding-top: 0px;
+	color: #e2eef3;
+	background-position: 0 0;
+	background-size: 148px 45px;
+	background-repeat: no-repeat;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+button.bottom{
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-width: 0;
+	width: 120px;
+	height: 30px;
+	font-size: 16px;
+	font-style: normal;
+}
+button.blue{
+	background-image: url('../imagens/azul.png');
+}
+button.red{
+	background-image: url('../imagens/vermelho.png');
+}
+button.yellow{
+	background-image: url('../imagens/amarelo.png');
+}
+button.green{
+	background-image: url('../imagens/verde.png');
+}
+button.orange{
+	background-image: url('../imagens/laranja.png');
+}
+button:active{
+	background-color: #1c4f64;
+	background-size: 145px 43px;
+	font-size: 15px;
+}
+@media screen and (min-width: 1000px) and (min-height: 575px){
+	.aviso{
+		display: none;
+	}
+}
+@media screen and (max-width: 999px){
+	.container{
+		display: none;
+	}
+}
+@media screen and (max-height: 574px){
+	.container{
+		display: none;
+	}
+}
